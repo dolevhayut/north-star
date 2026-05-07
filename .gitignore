@@ -1,0 +1,6 @@
+.DS_Store
+.north-star.counter
+*.swp
+.idea/
+.vscode/
+node_modules/
