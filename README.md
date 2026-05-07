@@ -22,9 +22,29 @@ Full mechanism: [`references/why-llms-drift.md`](references/why-llms-drift.md).
 
 ## Install
 
+**Interactive (pick your agent):**
 ```bash
 npx skills add dolevhayut/north-star
 ```
+
+**Global — all agents, no prompts:**
+```bash
+npx skills add dolevhayut/north-star --yes --global
+```
+
+**Project-local — all agents, no prompts:**
+```bash
+npx skills add dolevhayut/north-star --yes
+```
+
+The CLI auto-detects which agents you use. The agents below are supported — use whichever matches your setup:
+
+| Agent | Install path |
+|---|---|
+| Amp, Antigravity, Cline, Codex, Cursor, Gemini CLI, GitHub Copilot, Warp, and more | `.agents/skills` (universal, always included) |
+| Claude Code | `.claude/skills` |
+| Aider | `.aider-desk/skills` |
+| Augment | `.augment/skills` |
 
 Invoke with `/north-star` or by asking Claude to "run a north star check".
 
