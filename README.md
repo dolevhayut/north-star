@@ -22,14 +22,8 @@ Full mechanism: [`references/why-llms-drift.md`](references/why-llms-drift.md).
 
 ## Install
 
-Drop the `north-star/` directory into your Claude Code skills folder:
-
 ```bash
-# global (all projects)
-git clone https://github.com/dolevhayut/north-star ~/.claude/skills/north-star
-
-# or per-project
-git clone https://github.com/dolevhayut/north-star .claude/skills/north-star
+npx skills add dolevhayut/north-star
 ```
 
 Invoke with `/north-star` or by asking Claude to "run a north star check".
